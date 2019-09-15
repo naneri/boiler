@@ -9,7 +9,9 @@ PHP, NGINX, MYSQL
 Optional: Redis
 
 To add the docker containers to your project simply do: 
+
 `cp boiler/* YOUR_PROJECT_DIRECTORY/ -r`
+
 `sh up.sh`
 
 Here are some commands that you might need: 
@@ -21,8 +23,6 @@ $ docker-compose rm            # remove stopped containers
 $ docker ps                    # see list of running containers
 $ docker exec -ti [NAME] bash
 ```
-
-On Linux you will need to run `sh ./deploy/permissions.sh`. Here are some explanations - https://vessel.shippingdocker.com/docs/linux-permissions/
 
 You will need to setup the port numbers in .env file: 
 WEB_PORT - for web port (recommended 8080)
