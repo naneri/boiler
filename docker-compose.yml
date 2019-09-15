@@ -18,7 +18,7 @@ services:
             - ./:/var/www
         links:
             - database
-            - cache
+            # - cache
         environment:
             - "DB_PORT=3306"
             - "DB_HOST=database"
