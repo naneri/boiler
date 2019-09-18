@@ -7,7 +7,7 @@ services:
         volumes:
             - ./:/var/www
         ports:
-            - "${WEB_PORT}:80"
+            - "${WEB_MASTER_PORT}:80"
         links:
             - app
     app:
@@ -30,8 +30,8 @@ services:
             - "MYSQL_ROOT_PASSWORD=secret"
             - "MYSQL_DATABASE=dockerApp"
         ports:
-            - "${DB_PORT}:3306"
+            - "${DB_MASTER_PORT}:3306"
     # cache:
     #     image: redis:3.0
     #     ports:
-    #         - "${CACHE_PORT}:6379"
+    #         - "${CACHE_MASTER_PORT}:6379"
