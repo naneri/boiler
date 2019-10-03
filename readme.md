@@ -28,10 +28,6 @@ $ docker ps                    # see list of running containers
 $ docker exec -ti [NAME] bash
 ```
 
-You will need to setup the port numbers in .env file: 
-WEB_PORT - for web port (recommended 8080)
-DB_PORT - for database (recommended 33060)
-CACHE_PORT - in case you are using Redis (recommended 63790)
 
 ## Running commands: 
 
