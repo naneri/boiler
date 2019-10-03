@@ -12,8 +12,11 @@ Optional: Redis
 
 To add the docker containers to your project simply do: 
 
-`cp boiler/* YOUR_PROJECT_DIRECTORY/ -r`  
-`sh up.sh`
+`cp boiler/deploy/ YOUR_PROJECT_DIRECTORY/ -r`  
+`cd YOUR_PROJECT_DIRECTORY/deploy`
+`cp .env.docker .env`
+
+Edit all the ports required in the `.env` file
 
 Here are some commands that you might need: 
 ```
