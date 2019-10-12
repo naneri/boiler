@@ -35,7 +35,7 @@ services:
     #     image: mysql:5.7
     #     environment:
     #         - "MYSQL_ROOT_PASSWORD=secret"
-    #         - "MYSQL_DATABASE=dockerApp"
+    #         - "MYSQL_DATABASE=laravel"
     #     ports:
     #         - "${DOCKER_DB_PORT:-33060}:3306"
 
