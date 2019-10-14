@@ -24,18 +24,18 @@ services:
         links:
             - database   
             # - cache
-        # environment:
-        #     - "DB_PORT=3306"
-        #     - "DB_HOST=database"
+        environment:
+            - "DB_PORT=3306"
+            - "DB_HOST=database"
         #     - "REDIS_PORT=6379"
         #     - "REDIS_HOST=cache"
 
-    # database container        
+    # database container      
     database:
         image: mysql:5.7
         environment:
             - "MYSQL_ROOT_PASSWORD=secret"
-            - "MYSQL_DATABASE=dockerApp"
+            - "MYSQL_DATABASE=laravel"
         ports:
             - "${DOCKER_DB_PORT}:3306"
 
