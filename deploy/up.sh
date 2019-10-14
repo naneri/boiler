@@ -4,7 +4,7 @@ docker-compose up -d
 
 # install composer dependencies
 docker run --rm --interactive --tty \
-  --volume $PWD:/app \
+  --volume $PWD/..:/app \
   composer install
 
 # set folder permissions
